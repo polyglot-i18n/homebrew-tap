@@ -1,27 +1,22 @@
-# Seed formula for the public tap repo (polyglot-i18n/homebrew-tap).
-# After the first `v*` tag, the Release workflow regenerates this file in the
-# tap repo with real sha256s — so this checked-in copy is just the reference /
-# initial seed. Binaries are served from Cloudflare R2 (releases.getpolyglot.ai),
-# so the source repo can stay private.
 class Polyglot < Formula
   desc "CLI-first i18n tool — detect and translate untranslated strings with AI"
   homepage "https://getpolyglot.ai"
-  version "0.1.0"
+  version "0.1.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.getpolyglot.ai/v0.1.0/polyglot-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_ARM64_SHA256"
+      url "https://releases.getpolyglot.ai/v0.1.1/polyglot-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "13a43842b6d78bb52cdfda58bbadb04df2ccffdbae39f977017a7e9b74010717"
     else
-      url "https://releases.getpolyglot.ai/v0.1.0/polyglot-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_X86_64_SHA256"
+      url "https://releases.getpolyglot.ai/v0.1.1/polyglot-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "17ffa823e392b47ea583b05e41f681f6df42ad2df1c09492d3b3fc4949c24fd3"
     end
   end
 
   on_linux do
-    url "https://releases.getpolyglot.ai/v0.1.0/polyglot-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "PLACEHOLDER_LINUX_SHA256"
+    url "https://releases.getpolyglot.ai/v0.1.1/polyglot-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "5e54971b49c698c8b562276a4a267f062376827cbb4b91d94aefae33d863c494"
   end
 
   def install
