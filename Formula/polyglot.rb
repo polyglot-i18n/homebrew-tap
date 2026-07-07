@@ -1,22 +1,22 @@
 class Polyglot < Formula
   desc "CLI-first i18n tool — detect and translate untranslated strings with AI"
   homepage "https://getpolyglot.ai"
-  version "0.8.2"
+  version "0.8.3"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.getpolyglot.ai/v0.8.2/polyglot-v0.8.2-aarch64-apple-darwin.tar.gz"
-      sha256 "a25a9d285cda7be1544d4c3c2c04cfc51b32ee53b51dcbd76adc3d43da844ecb"
+      url "https://releases.getpolyglot.ai/v0.8.3/polyglot-v0.8.3-aarch64-apple-darwin.tar.gz"
+      sha256 "3e3988ef4fca66a0f6ba81f067061f6c4b57750f1cec2c0879b0309ebdbd5035"
     else
-      url "https://releases.getpolyglot.ai/v0.8.2/polyglot-v0.8.2-x86_64-apple-darwin.tar.gz"
-      sha256 "4d9523ac4fc57b28b3c4a1f109c5a9ae51bb750cc10ebdd259b21e062e9ad153"
+      url "https://releases.getpolyglot.ai/v0.8.3/polyglot-v0.8.3-x86_64-apple-darwin.tar.gz"
+      sha256 "ed2b7355ae66cc845e743cea05c640909e6536a7813c22a9993e2ede375a8c3b"
     end
   end
 
   on_linux do
-    url "https://releases.getpolyglot.ai/v0.8.2/polyglot-v0.8.2-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "9e28df26e84f011099086bcdd65d66961c997a9735d8814afc2792cea6903e93"
+    url "https://releases.getpolyglot.ai/v0.8.3/polyglot-v0.8.3-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "2846fa7cd6afe8e3df84f4bea16219544de49150cfc190cf0c5cad76e53d7cb8"
   end
 
   def install
